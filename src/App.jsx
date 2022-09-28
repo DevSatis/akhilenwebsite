@@ -1,10 +1,17 @@
 // import './App.css';
 
+import styled from "styled-components";
+import Navbar from "./components/Navbar";
+
+const Container = styled.div`
+  height:100vh;
+`;
+
 function App() {
   return (
-    <div className="App">
-      <h1>Akhilen</h1>
-    </div>
+    <Container>
+      <Navbar />
+    </Container>
   );
 }
 
