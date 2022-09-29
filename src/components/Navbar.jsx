@@ -18,8 +18,9 @@ const Left = styled.div`
 `;
 const Logo = styled.h1`
   font-weight: bold;
-  text-decoration: underline crimson;
+  text-decoration: underline #f21010;
   color: lightseagreen;
+  cursor: pointer;
 `;
 
 const Menu = styled.ul`
@@ -31,12 +32,17 @@ const MenuItem = styled.li`
   font-size: 20px;
   font-weight: bold;
   color: gray;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 10px 15px;
+  background-color: #f21010;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 `;
 
 const Navbar = () => {
