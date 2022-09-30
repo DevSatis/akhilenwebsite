@@ -9,7 +9,7 @@ const Container = styled.div`
 const Intro = () => {
   return (
     <Container>
-        
+        Hello Satish
     </Container>
   )
 }
