@@ -2,14 +2,48 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    height: calc(100vh - 50px);
-    
+    height: calc(100vh - 50px); 
+    display: flex;
+    padding: 20px;
+`;
+const Left = styled.div`
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+const Title = styled.h1`
+  font-size: 40px;
+  width: 60%;
+`;
+const Desc = styled.p`
+  width: 60%;
+  font-size: 20px;
+  margin-top: 20px;
+`;
+
+const Info = styled.div`
+  width: 60%;
+`;
+
+const Right = styled.div`
+    width: 40%;   
 `;
 
 const Intro = () => {
   return (
     <Container>
-        Hello Satish
+        <Left>
+          <Title>
+            Adventures in Creativity! 
+          </Title>
+          <Desc>
+            We belive that designing product and services in close partnership with
+            our clients is the only way to have a real impact on their business.  
+          </Desc>
+        </Left>
+        <Right>Right</Right>
     </Container>
   )
 }
