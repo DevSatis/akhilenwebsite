@@ -25,6 +25,32 @@ const Desc = styled.p`
 
 const Info = styled.div`
   width: 60%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Button = styled.button`
+  padding: 15px;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+`;
+const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const Phone = styled.span`
+  color: #f0667d;
+  font-weight: bold;
+`;
+const ContactText = styled.span`
+  color: gray;
+  margin-top: 5px;
 `;
 
 const Right = styled.div`
@@ -42,6 +68,13 @@ const Intro = () => {
             We belive that designing product and services in close partnership with
             our clients is the only way to have a real impact on their business.  
           </Desc>
+          <Info>
+            <Button>Start a Project</Button>
+            <Contact>
+              <Phone>Call Us (+91) 904 446 6058</Phone>
+              <ContactText>For any question or concern</ContactText>
+            </Contact>
+          </Info>
         </Left>
         <Right>Right</Right>
     </Container>
