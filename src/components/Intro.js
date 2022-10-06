@@ -31,7 +31,7 @@ const Info = styled.div`
   justify-content: space-between;
 `;
 const Button = styled.button`
-  padding: 15px;
+  padding: 10px;
   background-color: darkblue;
   color: white;
   font-weight: bold;
