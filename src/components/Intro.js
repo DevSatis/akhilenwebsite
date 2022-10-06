@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Woman from '../image/woman.png';
+import AnimatedShapes from './AnimatedShapes'
 
 const Container = styled.div`
     height: calc(100vh - 50px); 
@@ -56,6 +58,9 @@ const ContactText = styled.span`
 const Right = styled.div`
     width: 40%;   
 `;
+const Image = styled.img`
+  width: 100%;
+`;
 
 const Intro = () => {
   return (
@@ -76,7 +81,8 @@ const Intro = () => {
             </Contact>
           </Info>
         </Left>
-        <Right>Right</Right>
+        <Right> <Image src={Woman} /> </Right>
+        <AnimatedShapes />
     </Container>
   )
 }
