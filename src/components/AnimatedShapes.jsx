@@ -10,7 +10,7 @@ const Square = styled.div`
     top: -60px;
     left: -60px;
     z-index: -1;
-    animation: square 25s linear alternate infinite;
+    animation: square 20s linear alternate infinite;
 
     @keyframes square {
         to{
@@ -25,10 +25,10 @@ const Circle = styled.div`
     border-radius: 50%;
     background-color: #ff97af;
     position: absolute;
-    top: 200px;
+    top: 300px;
     left: -100px;
     z-index: -1;
-    animation: circle 25s linear alternate infinite;
+    animation: circle 20s linear alternate infinite;
 
     @keyframes circle {
         to{
@@ -46,7 +46,7 @@ const Rect = styled.div`
     top: 400px;
     left: -50px;
     z-index: -1;
-    animation: rect 25s linear alternate infinite;
+    animation: rect 20s linear alternate infinite;
 
     @keyframes rect {
         to{
