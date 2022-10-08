@@ -9,7 +9,7 @@ const Left = styled.div`
     width: 50%;
 `;
 const Image = styled.img`
-    height: 100%;
+    width: 80%;
 `;
 
 const Right = styled.div`
@@ -19,11 +19,11 @@ const Right = styled.div`
 const Service = () => {
   return (
     <Container>
-        <left>
+        <Left>
             <Image src={How}/>
-        </left>
+        </Left>
         <Right>
-
+            Right
         </Right>
     </Container>
   )
