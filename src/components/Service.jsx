@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import How from '../image/new.png';
 import MiniCard from './MiniCard';
 import Play from '../image/play.png';
+import Player from '../image/kuchBate.mp4';
 
 const Container = styled.div`
     display: flex;
 `;
 const Left = styled.div`
     width: 50%;
+    position: relative;
 `;
 const Image = styled.img`
+    display: ${(props) => props.open && 'none'};
     width: 80%;
     margin-left: 70px;
 `;
+const Video = styled.video`
+    display: ${(props) => !props.open && 'none'};
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+`;
+
+
 const Right = styled.div`
     width: 50%;
 `;
@@ -55,10 +69,19 @@ const Icon = styled.img`
 
 
 const Service = () => {
+    const [open, setOpen] = useState(false);
+
   return (
     <Container>
         <Left>
-            <Image src={How}/>
+            <Image open={open} src={How}/>
+            <Video open={open} 
+            autoPlay
+            muted 
+            loop 
+            controls 
+            src={Player}
+            />
         </Left>
         <Right>
             <Wrapper>
@@ -74,7 +97,9 @@ const Service = () => {
                     <MiniCard/>
                     <MiniCard/>
                 </CardContainer>
-                <Button><Icon src={Play}/>How it works</Button>
+                <Button onClick={() => setOpen(true)}>
+                    <Icon src={Play}/>How it works
+                </Button>
             </Wrapper>
         </Right>
     </Container>
